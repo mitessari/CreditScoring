@@ -406,15 +406,38 @@ video {
 .company-box {
   width: 250px;
   height: 350px;
+  border-radius: 10px;
 }
 
 .imgCompany {
-  width: 60%;
-  align-content: center;
-  padding: 50px;
-  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  margin: 10px;
 }
 
+.box-main-content {
+  text-align: center;
+}
+
+.box-main-content h4 {
+  font-size: 1.3rem;
+}
+.box-main-content p {
+  font-size: 1rem;
+  opacity: 0.7;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.imgCompany img {
+  margin-left: 4rem;
+  width: 40%;
+  text-align: center;
+}
+.box-main-content {
+  width: 100%;
+}
 .company-text {
   font-size: 1.5rem;
   text-align: center;
@@ -504,6 +527,10 @@ video {
   background-color: #101010;
 }
 
+.arrow {
+  width: 50px;
+}
+
 @media (min-width: 58.125rem) {
   .footer {
     grid-template-columns: 20% 26% auto;
@@ -569,8 +596,8 @@ video {
 /* Navbar styles for small screens */
 @media screen and (max-width: 600px) {
   .logo-img {
-    width: 70%;
-    height: 80%;
+    width: 40%;
+    height: 100%;
   }
   .w-nav-menu {
     position: fixed;
@@ -728,10 +755,18 @@ video {
     justify-content: center;
     grid-template-columns: 1fr;
   }
-  .imgCompany {
-    margin-top: 0;
-    padding: 40px;
+
+  .imgCompany img {
+    margin-left: 3rem;
   }
+
+  .box-main-content h4 {
+    font-size: 0.8rem;
+  }
+  .box-main-content p {
+    font-size: 0.5rem;
+  }
+
   #implement-grid {
     display: grid;
   }

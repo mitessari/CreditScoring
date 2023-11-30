@@ -80,3 +80,12 @@ input[type="submit"]:hover {
   width: 20%;
   font-size: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+  .contact-text p {
+    font-size: 0.7rem;
+  }
+  .btn-primary {
+    width: 40%;
+  }
+}

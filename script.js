@@ -3,6 +3,14 @@ const navMenu = document.querySelector(".w-nav-menu");
 const form = document.querySelector('.formContainer form');
 const inputs = document.querySelectorAll('.formContainer form input');
 const selects = document.querySelectorAll('.formContainer form select');
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
+
+
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
     for (var i = 0; i < reveals.length; i++) {
@@ -48,10 +56,7 @@ form.addEventListener('submit', (e) => {
   });
 });
 
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-});
+
 
 
 
