@@ -115,6 +115,19 @@ body {
   height: 100%;
   margin: 0;
 }
+.navbar-icons-social {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.9375rem;
+  justify-content: center;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.navbar-icons-social img {
+  cursor: pointer;
+  width: 1.5625rem;
+}
 /* buttons */
 .btn,
 .button_contact {
@@ -122,6 +135,7 @@ body {
   padding: 1rem 1rem;
   border-radius: 90px;
   color: black;
+  font-size: 1rem;
 }
 
 .btn:hover,
@@ -132,7 +146,7 @@ body {
 .demo-btn {
   background-color: #0088cc;
   border: none;
-  padding: 1.5rem;
+  padding: 1rem 1rem;
   font-size: 1rem;
   margin-top: 20px;
   color: black;
@@ -533,6 +547,10 @@ video {
   width: 50px;
 }
 
+.navbar-icons-social:hover img:hover {
+  opacity: 0.7;
+}
+
 @media (min-width: 58.125rem) {
   .footer {
     grid-template-columns: 20% 26% auto;
@@ -608,11 +626,23 @@ video {
     top: 1rem;
     flex-direction: column;
     background-color: #fff;
-    width: 100%;
     height: 50%;
+    width: 100%;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .navegation-right {
+    padding-top: 15px;
+    display: block;
+    width: 40%;
+    margin-left: 7rem;
+  }
+  .navbar-icons-social {
+    margin-top: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70px;
+    margin-left: 20px;
   }
 
   .navegation-container {
@@ -669,8 +699,6 @@ video {
   }
 
   .btn {
-    padding: 10px;
-    width: 20%;
     font-size: 10px;
   }
 
@@ -731,7 +759,6 @@ video {
     line-height: 1.3;
   }
   .scnd-btn {
-    width: 20%;
     font-size: 10px;
     margin-left: 20px;
   }
@@ -777,7 +804,6 @@ video {
     margin-left: 10px;
   }
   #implement-btn {
-    width: 40%;
     font-size: 10px;
     margin: 0 auto;
     margin-left: 10px;
@@ -804,4 +830,209 @@ video {
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-img {
+    width: 40%;
+    height: 100%;
+  }
+  .w-nav-menu {
+    position: fixed;
+    z-index: 5;
+    left: -130%;
+    top: 1rem;
+    flex-direction: column;
+    background-color: #fff;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .navegation-right {
+    padding-top: 15px;
+    display: block;
+    width: 40%;
+    margin-left: 5rem;
+  }
+  .navbar-icons-social {
+    margin-top: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70px;
+    margin-left: 10px;
+  }
+
+  .navegation-container {
+    display: grid;
+    grid-template-columns: 1fr 95px;
+    width: 100%;
+  }
+
+  .nav-link {
+    margin: 2.5rem 0;
+  }
+
+  .w-nav-menu.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .home {
+    background: #f2f5f8;
+  }
+  .home-content {
+    margin: auto;
+    margin-left: 20px;
+    line-height: 1.6;
+    width: 100%;
+  }
+  .home-content h1 {
+    font-size: 1.5rem;
+  }
+  .inteligentAi {
+    font-size: 1.2rem;
+  }
+  .big_subtitle {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 10px;
+  }
+
+  video {
+    height: 90%;
+  }
+  .two-col-grid {
+    margin-top: 0;
+    grid-column-gap: 2rem;
+  }
+  .main-title {
+    font-size: 1rem;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .main-text {
+    font-size: 0.7rem;
+    margin-left: 15px;
+  }
+  .box {
+    margin-top: 10px;
+    width: 180px;
+    height: 190px;
+  }
+  .box .imgBx {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    top: 25%;
+  }
+  .box .imgBx img {
+    margin-left: 0;
+  }
+  .content p {
+    font-size: 0.5rem;
+  }
+  .benefits-section h2 {
+    font-size: 1.4rem;
+  }
+  .benefits-grid {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+  .two-col-grid {
+    display: block;
+    padding-left: 0;
+  }
+  .two-col-grid img {
+    width: 50%;
+    height: 50%;
+  }
+  .grid-content h3 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+  .scnd-btn {
+    font-size: 10px;
+    margin-left: 20px;
+  }
+  .ol2 {
+    float: none;
+  }
+  .analytics-title {
+    font-size: 30px;
+    padding-right: 20px;
+    margin-bottom: 0;
+  }
+  .analytics-grid {
+    padding: 20px;
+    grid-column-gap: 4px;
+  }
+  .analytics-icon {
+    width: 50%;
+  }
+  .companies-title {
+    font-size: 1.5rem;
+  }
+  .companies-grid {
+    justify-content: center;
+    grid-template-columns: 1fr;
+    margin-left: 3rem;
+  }
+
+  .imgCompany img {
+    margin-left: 3rem;
+  }
+
+  .box-main-content h4 {
+    font-size: 0.8rem;
+  }
+  .box-main-content p {
+    font-size: 0.5rem;
+  }
+
+  #implement-grid {
+    display: grid;
+  }
+  .implement-content h4 {
+    font-size: 1.3rem;
+    margin-left: 10px;
+  }
+  #implement-btn {
+    font-size: 10px;
+    margin: 0 auto;
+    margin-left: 10px;
+  }
+  #smarteller-icon {
+    width: 70%;
+    height: 70%;
+  }
+  .footer-icons-social {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ol {
+    margin-top: 0;
+  }
 }
