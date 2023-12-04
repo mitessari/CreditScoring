@@ -688,7 +688,7 @@ video {
   }
 }
 
-/* main content for small screens */
+/* main content for small screens and medium screens*/
 @media screen and (max-width: 600px) {
   .home {
     background: #f2f5f8;
@@ -734,6 +734,7 @@ video {
     margin-top: 10px;
     width: 180px;
     height: 190px;
+    margin-left: 5rem;
   }
   .box .imgBx {
     display: flex;
@@ -829,6 +830,47 @@ video {
 
   .ol {
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .box {
+    margin-left: 3rem;
+  }
+}
+/* main for medium screens */
+@media screen and (max-width: 1000px) {
+  .home-content {
+    line-height: 1.6;
+  }
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+  .inteligentAi {
+    font-size: 2rem;
+  }
+  .big_subtitle {
+    font-size: 2rem;
+  }
+  .two-col-grid {
+    display: block;
+  }
+  .box {
+    margin-top: 10px;
+  }
+  .companies-grid {
+    margin-left: 2rem;
+  }
+  .company-box {
+    width: 200px;
+  }
+  #implement-grid {
+    display: grid;
+  }
+  #smarteller-icon {
+    width: 70%;
+  }
+  .footer-icons-social {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
